@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.object{
+	width:200px;
+	height: 200px;
+	background-image: url(computer.jpg);
+	display: inline-block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	transition: 4s;
+}
+.object:hover{
+	transform:rotate(90deg);
+}
+	body{
+		margin: 0px;
+	}
+
+		
+
+	</style>
+
+
+
+
+</head>
+<body>
+
+<!-- 	<div id="computer">
+		
+	</div> -->
+
+	<script type="text/javascript">
+	function makeObject() {
+		var arabella = document.createElement("div")
+		document.body.appendChild(arabella)
+		arabella.classList.add("object")
+		
+	}
+
+	setInterval(makeObject, 1000)
+
+	</script>
+
+	
+</body>
+</html>
