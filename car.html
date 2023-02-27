@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type ="text/css">
+	.buggy{
+		width: 100px;
+		height: 100px;
+		color: lightgoldenrodyellow;
+	}
+</style>
+	
+</style>
+</head>
+<body>
+
+</body>
+</html>
+	<script type="text/javascript">
+
+	document.addEventListener("keydown", 
+		function(event){
+		console.log(event.keyCode)
+
+	if (event.keyCode == 39) {
+	x = x+10;
+	buggy.style.left = x +"px";
+	}
+
+	else if (event.keyCode ==37){
+		x=x-10
+		buggy.style.left=x+"px"
+	}
+	})
+</script>
